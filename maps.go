@@ -19,8 +19,8 @@ func main() {
 			"sobrenome": "Lourenço",
 		},
 		"curso": {
-			"curso_nome": "engenharia de Software",
-			"duração":    "3 anos",
+			"curso_nome": "Engenharia de Software",
+			"duração":    "5 anos",
 		},
 	}
 

@@ -2,6 +2,19 @@ package main
 
 import "fmt"
 
+type informacao struct {
+	nome        string
+	idade       uint8
+	localizacao endereco
+}
+
+type endereco struct {
+	rua    string
+	numero uint16
+	cidade string
+	estado string
+}
+
 func main() {
 	fmt.Println("Maps")
 
@@ -31,4 +44,13 @@ func main() {
 	}
 
 	fmt.Println(usuario2)
+
+	infos()
+}
+
+func infos() {
+
+	enderecamento := endereco{rua: "graccho rangel", numero: 553, cidade: "Niterói", estado: "RJ"}
+	dado_pessoal := informacao{nome: "lucas", idade: 20, localizacao: enderecamento}
+	fmt.Println(dado_pessoal)
 }
